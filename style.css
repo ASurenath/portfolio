@@ -105,83 +105,66 @@ button {
     padding: 10px;
     margin: auto;
 }
-
-button:hover {
-    background-color: rgba(32, 6, 26, 0);
-    color: rgba(255, 255, 255, 0.479);
-
+span.cgpa{
+    border:solid 1px rgba(255, 255, 255, 0.295);
+    border-radius: 10px;
+    color:rgba(255, 255, 255, 0.521);
+    background-color: rgba(255, 87, 219, 0.096);
 }
-
-.custom-tooltip {
-    --bs-tooltip-bg: var(--bd-violet-bg);
-    --bs-tooltip-color: var(--bs-white);
-}
-
-
 
 @media(max-width:768px) {
     .intro {
         width: 100%;
     }
 }
+/*hover effects*/
+li:hover{
+    transform: scale(1.005);
+}
+.cgpa{
+    opacity:0% ;
+    transition: 0.5s ease-in-out;
+}
+li:hover .cgpa{
+    opacity:100%;
+}
+td:hover{
+    transform: scale(1.02);
+}
+.bubble:hover .bubblehead i{
+    animation:spin 1s linear 0s infinite;
+}
+.bubble:hover h3{
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.466);
+}
+.hello{
+    transition: 1s ease-in-out;
+}
+.hello:hover{
+    transform:scale(1.5)
+}
+.dp{
+    transition: 0.5s ease-in;
+}
+.dp:hover{
+    transform:scale(1.4)
+}
+button:hover{
+    animation: pulse 1s ease-in-out 0s infinite;
+    /* background-color: rgba(32, 6, 26, 0); */
+}
+
 /*animation experiments*/
 
-.hello {
-    animation: drop 2s linear 0s 1;
-}
 
-.iam{
-    animation:appear1 3s linear 0s 1;
-}
-
-.anagha, .dp{
-    animation: appear2 10s linear 0s 1;
-}
-.caption{
-    animation: appear2 15s linear 0s 1;
+/* .caption{
+    animation: appear2 3s linear 0s 1;
 }
 .appearlater{
-    animation: appear1 18s linear 0s 1;
+    animation: appear1 3s linear 0s 1;
 }
 
-@keyframes drop {
-    0% {
-        transform: translateY(-200px);
 
-    }
-
-    10% {
-        transform: translateY(0);
-    }
-
-    15% {
-        transform: translateY(-10px);
-    }
-
-    20% {
-        transform: translateY(0px);
-    }
-
-    25% {
-        transform: translateY(-5px);
-    }
-
-    30% {
-        transform: translateY(0px);
-    }
-
-    35% {
-        transform: translateY(-2px);
-    }
-
-    40% {
-        transform: translateY(0px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
 
 @keyframes appear1 {
     0% {
@@ -206,4 +189,30 @@ button:hover {
     100% {
         opacity: 100%;
     }
+} */
+@keyframes spin{
+    0%{
+        transform:rotateY(0deg);
+ 
+    }
+    50%{
+        transform:rotateY(180deg);
+    }
+    100%{
+        transform:rotatY(360deg);
+    }
+    
 }
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.08);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+    
+
