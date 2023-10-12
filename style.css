@@ -111,9 +111,11 @@ button {
     color: rgba(255, 255, 255, 0.815);
     box-shadow: 0px 0px 3px rgb(85, 0, 67);
     border-radius: 20px;
-    border-top: none;
+    border: groove 1px;
+    border-color:  #16465c #16465c rgb(48, 9, 38) rgb(48, 9, 38);
     padding: 10px;
     margin: auto;
+    transition:0.5s ease-in-out;
 }
 
 span.cgpa {
@@ -162,7 +164,7 @@ span.cgpa {
 
 @media(min-width:768px) {
     .dp {
-        transition: 0.5s ease-in;
+        transition: 1s ease-in-out;
     }
 
     .dp:hover {
@@ -190,25 +192,25 @@ td:hover {
 }
 
 .bubble:hover .bubblehead i {
-    animation: spin 1s linear 0s infinite;
+    animation: spin 2s linear 0s infinite;
 }
 
 .bubble:hover h3 {
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.466);
 }
 
-.hello {
+/* .hello {
     transition: 1s ease-in-out;
 }
 
 .hello:hover {
     transform: scale(1.5);
-}
+} */
 
 
 button:hover {
-    animation: pulse 1s ease-in-out 0s infinite;
-    box-shadow: 0px 0px 7px rgb(85, 0, 67);
+    transform: scale(1.08);
+    box-shadow: 0px 0px 7px rgba(255, 243, 252, 0.315);
 
     /* background-color: rgba(32, 6, 26, 0); */
 }
@@ -230,16 +232,3 @@ button:hover {
 
 }
 
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.08);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
