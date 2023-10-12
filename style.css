@@ -212,9 +212,17 @@ button:hover {
     transform: scale(1.08);
     box-shadow: 0px 0px 7px rgba(255, 243, 252, 0.315);
 
+
+}
+button:focus {
+    box-shadow: 0px 0px 7px rgba(255, 243, 252, 0.315);
+}
+button:active {
+    border-color: rgb(48, 9, 38) rgb(48, 9, 38) #16465c #16465c;
+    box-shadow: 0px 0px 7px rgba(255, 243, 252, 0.315);
+
     /* background-color: rgba(32, 6, 26, 0); */
 }
-
 /*animations*/
 @keyframes spin {
     0% {
