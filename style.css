@@ -26,13 +26,15 @@ li {
     padding: 1vw;
 }
 
-.contact li,.contact a{
+.contact li,
+.contact a {
     font-size: calc(5px + 1vw);
     text-decoration: none;
     font-style: italic;
-    color:white;
+    color: white;
 
 }
+
 .achievements li {
     padding: 0.5vw;
 }
@@ -113,122 +115,123 @@ button {
     padding: 10px;
     margin: auto;
 }
-span.cgpa{
-    border:solid 1px rgba(255, 255, 255, 0.295);
+
+span.cgpa {
+    border: solid 1px rgba(255, 255, 255, 0.295);
     border-radius: 10px;
-    color:rgba(255, 255, 255, 0.521);
+    color: rgba(255, 255, 255, 0.521);
     background-color: rgba(255, 87, 219, 0.096);
 }
+/*fixed elements*/
+.up,.contactme{
+    position:fixed;
+    bottom: 10px;
+    z-index: 10;
+    height:40px;
+    width:40px; 
+    text-align: center;  
+    padding: 7px;
+    background-color:rgba(85, 0, 67, 0.247) ;
+    border-radius: 20px;
+    transition: 0.2s ease-in;
+}
+.up:hover,.contactme:hover{
+    transform: scale(1.2);
+}
+.up{
+    left:25px;
+}
+.contactme{
+    right:25px;
+}
 
+/*mediaquery*/
 @media(max-width:768px) {
     .intro {
         width: 100%;
     }
 }
 
-@media(min-width:768px){
-    .dp{
+@media(min-width:768px) {
+    .dp {
         transition: 0.5s ease-in;
     }
-    .dp:hover{
-        transform:scale(1.4);
+
+    .dp:hover {
+        transform: scale(1.4);
     }
-    
-}
-/*hover effects*/
-li:hover{
-    transform: scale(1.005);
-}
-.cgpa{
-    opacity:0% ;
-    transition: 0.5s ease-in-out;
-}
-li:hover .cgpa{
-    opacity:100%;
-}
-td:hover{
-    transform: scale(1.02);
-}
-.bubble:hover .bubblehead i{
-    animation:spin 1s linear 0s infinite;
-}
-.bubble:hover h3{
-    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.466);
-}
-.hello{
-    transition: 1s ease-in-out;
-}
-.hello:hover{
-    transform:scale(1.5);
+
 }
 
-    
-button:hover{
+/*hover effects*/
+li:hover {
+    transform: scale(1.005);
+}
+
+.cgpa {
+    opacity: 0%;
+    transition: 0.5s ease-in-out;
+}
+
+li:hover .cgpa {
+    opacity: 100%;
+}
+
+td:hover {
+    transform: scale(1.02);
+}
+
+.bubble:hover .bubblehead i {
+    animation: spin 1s linear 0s infinite;
+}
+
+.bubble:hover h3 {
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.466);
+}
+
+.hello {
+    transition: 1s ease-in-out;
+}
+
+.hello:hover {
+    transform: scale(1.5);
+}
+
+
+button:hover {
     animation: pulse 1s ease-in-out 0s infinite;
     box-shadow: 0px 0px 7px rgb(85, 0, 67);
 
     /* background-color: rgba(32, 6, 26, 0); */
 }
 
-/*animation experiments*/
-
-
-/* .caption{
-    animation: appear2 3s linear 0s 1;
-}
-.appearlater{
-    animation: appear1 3s linear 0s 1;
-}
-
-
-
-@keyframes appear1 {
+/*animations*/
+@keyframes spin {
     0% {
-        opacity: 0%;
+        transform: rotateY(0deg);
+
     }
-    66% {
-        opacity: 0%;
+
+    50% {
+        transform: rotateY(180deg);
     }
 
     100% {
-        opacity: 100%;
-    }
-}
-@keyframes appear2{
-    0% {
-        opacity: 0%;
-    }
-    40% {
-        opacity: 0%;
+        transform: rotatY(360deg);
     }
 
-    100% {
-        opacity: 100%;
-    }
-} */
-@keyframes spin{
-    0%{
-        transform:rotateY(0deg);
- 
-    }
-    50%{
-        transform:rotateY(180deg);
-    }
-    100%{
-        transform:rotatY(360deg);
-    }
-    
 }
+
 @keyframes pulse {
-    0%{
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.08);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
-    
-
