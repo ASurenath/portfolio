@@ -124,6 +124,15 @@ span.cgpa {
     color: rgba(255, 255, 255, 0.521);
     background-color: rgba(255, 87, 219, 0.096);
 }
+/****modal****/
+.modal-body{
+    background-color: rgba(0, 0, 0, 0);
+}
+.modal-content{
+    background-color: rgba(0, 0, 0, 0.377);
+    border-radius: 20px;
+}
+
 /*fixed elements*/
 .up,.contactme{
     position:fixed;
@@ -161,17 +170,10 @@ span.cgpa {
         padding-top: 10px;
     }
 }
-
+/* 
 @media(min-width:768px) {
-    .dp {
-        transition: 1s ease-in-out;
-    }
 
-    .dp:hover {
-        transform: scale(1.4);
-    }
-
-}
+} */
 
 /*hover effects*/
 li:hover {
@@ -199,13 +201,13 @@ td:hover {
     text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.466);
 }
 
-/* .hello {
+.hello {
     transition: 1s ease-in-out;
 }
 
 .hello:hover {
     transform: scale(1.5);
-} */
+}
 
 
 button:hover {

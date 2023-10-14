@@ -19,8 +19,8 @@
 
 <body>
 
-     <!---fixed elements starts here-->
-     <a href="#section1">
+    <!---fixed elements starts here-->
+    <a href="#section1">
         <div class="up">
             <i class="fa-solid fa-chevron-up"></i>
         </div>
@@ -48,7 +48,30 @@
                     <div class="col-md-6 pe-5">
 
 
-                        <img src="./images/photo.png" alt="My Photo" class="dp mx-5" width="75%">
+                        <img src="./images/photo.png" alt="My Photo" class="dp mx-5 btn"  data-bs-toggle="modal"
+                        data-bs-target="#exampleModal" width="75%">
+                        <!-- Button trigger modal -->
+                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Launch demo modal
+                        </button> -->
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="My Photo"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content"  data-bs-theme="dark"  data-bs-dismiss="modal">
+                                    
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close" ></button>
+                                        
+                                    
+                                    <div class="modal-body">
+                                        <img src="./images/photo.png" alt="My Photo" width="100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
 
                     </div>
@@ -133,7 +156,7 @@
             </div>
         </div>
         <br>
-        <h3 class="bubblehead ps-3" >
+        <h3 class="bubblehead ps-3">
             <i class="fa-regular fa-folder-open"></i> My Projects
         </h3>
         <hr>
@@ -246,7 +269,8 @@
                     <hr>
                     <ul class="contact">
                         <li>
-                            <a href="mailto:anagha.lakshmee@gmail.com"><i class="fa-solid fa-envelope"></i> <br> anagha.lakshmee@gmail.com</a>
+                            <a href="mailto:anagha.lakshmee@gmail.com"><i class="fa-solid fa-envelope"></i> <br>
+                                anagha.lakshmee@gmail.com</a>
                         <li>
                             <a href="https://www.linkedin.com/in/anagha-surendranath-35b1b6191/" traget="_blank"><i
                                     class="fa-brands fa-linkedin"></i> <br> anagha-surendranath-35b1b6191</a>
