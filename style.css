@@ -10,6 +10,7 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     color: white;
     font-size: calc(7px + 1vw);
+    cursor: default;
 }
 
 .year {
@@ -127,10 +128,15 @@ span.cgpa {
 /****modal****/
 .modal-body{
     background-color: rgba(0, 0, 0, 0);
+    cursor: zoom-out;
 }
 .modal-content{
     background-color: rgba(0, 0, 0, 0.377);
     border-radius: 20px;
+}
+.dp{
+    border-radius: 100%;
+    cursor: zoom-in;
 }
 
 /*fixed elements*/
